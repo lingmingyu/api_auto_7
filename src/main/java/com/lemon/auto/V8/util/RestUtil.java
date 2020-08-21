@@ -8,7 +8,7 @@ import java.util.List;
 public class RestUtil {
     public  static List<Rest> rests =new ArrayList<Rest>();
     static {
-        List<Rest> list=ExcelUtil.load("src/test/resources/cases_v7.xls","接口信息", Rest.class);
+        List<Rest> list=ExcelUtil.load(PropertiesUtil.getExcelPath(),"接口信息", Rest.class);
         rests.addAll(list);
     }
     /*根据接口编号获取接口地址

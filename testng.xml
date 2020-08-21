@@ -7,21 +7,21 @@
         <!--测试类集合 -->
         <classes>
         <!--对应的每个测试类 -->
-            <class name="test.cases.LoginCase"/>
+            <class name="com.lemon.auto.V8.cases.LoginCase"/>
         </classes>
     </test>
     <test name="login">
         <!--测试类集合 -->
         <classes>
             <!--对应的每个测试类 -->
-            <class name="test.cases.RechargeCase"/>
+            <class name="com.lemon.auto.V8.cases.RechargeCase"/>
         </classes>
     </test>
     <test name="recharge">
         <!--测试类集合 -->
         <classes>
             <!--对应的每个测试类 -->
-            <class name="test.cases.RegisterCase"/>
+            <class name="com.lemon.auto.V8.cases.RegisterCase"/>
         </classes>
     </test>
 <!--    定义参数 -->

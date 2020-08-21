@@ -13,7 +13,7 @@ public class CaseUtil {
     public static List<Case> cases= new ArrayList<Case>();
     static {
         //将所有数据解析封装到ceses
-        List<Case> list= ExcelUtil.load("src/test/resources/cases_v7.xls","用例", Case.class);
+        List<Case> list= ExcelUtil.load(PropertiesUtil.getExcelPath(),"用例", Case.class);
         cases.addAll(list);
 
     }

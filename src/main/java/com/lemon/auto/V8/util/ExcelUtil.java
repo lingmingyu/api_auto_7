@@ -20,7 +20,7 @@ public class   ExcelUtil {
     public static List<WriteBackData> writeBackDatas =new ArrayList<WriteBackData>();
 
     static {
-        loadRownumAndCellnumMapping("src/test/resources/cases_v7.xls","用例");
+        loadRownumAndCellnumMapping(PropertiesUtil.getExcelPath(),"用例");
     }
 
     /*
