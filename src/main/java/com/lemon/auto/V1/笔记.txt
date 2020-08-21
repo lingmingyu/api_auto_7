@@ -1,0 +1,28 @@
+HttpGet
+模拟,实现http协议下get请求的java类
+
+关键api参数
+1.构造函数:HttpGet httpGet = new HttpGet(url);创建一个get对象,以get方式提交接口请求
+2.组合拼接参数:URLEncodeUtils,format(params,"UTF-8");
+
+注意:如果以get提交的接口请求需要传参数,参数通常是直接拼接在url后面的
+
+
+HttpPost
+模拟,实现http协议下post请求的java类
+
+关键api参数
+1.构造函数:HttpPost post = new HttpPost(url);创建一个get对象,以get方式提交接口请求
+2.设置参数到请求体:post.setEntity(entity,charset);通过此方法将接口参数设置到请求体中
+
+
+HtpRequest
+接口类型,表示是从客户端发送到服务端的请求
+HttpGet和HttpPost都是HttpRquest的实现类，属于子类对象
+
+HttpResponse
+接口类型,表示的是从服务器到客户端的响应
+
+从响应对象中获取返回数据:getEntity()
+从响应对象中获取响应状态码:getStatusLine().getStatusCode()
+从响应对象中获取响应头的信息:getAllHeaders()
